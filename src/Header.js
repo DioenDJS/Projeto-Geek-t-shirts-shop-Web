@@ -22,6 +22,11 @@ const Header = () => {
       </Link>
 
       <ul className="navbar-nav ml-auto">
+        <li>
+          <Link className="nav-link" to="/graphSale">
+            GraficoVendas
+          </Link>
+        </li>
         <li className="nav-item">
           <Link className="nav-link" to="/login">
             <i className="fas fa-user-friends mr-2"></i>

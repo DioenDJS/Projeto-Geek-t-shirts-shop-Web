@@ -3,6 +3,7 @@ import Header from "./Header.js";
 import Listagem from "./Listagem.js";
 import UserLogin from "./UserLogin.js";
 import { ClienteContext } from "./ClienteContext.js";
+import GraficoVendas from "./GraficosVendas.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -21,6 +22,9 @@ function App() {
           <Route path="/login">
             <UserLogin />
           </Route>
+          <Route path="/graphSale">
+            <GraficoVendas />
+          </Route>  
         </Switch>
       </Router>
     </ClienteContext.Provider>
