@@ -37,7 +37,7 @@ const UserLogin = () => {
         <form className="form-signin" onSubmit={handleSubmit(onSubmit)}>
           <div className="text-center mb-4">
             <h1 className="h3 mb-3 font-weight-normal">Login do Cliente</h1>
-            <p>Participe da Avaliação de Nossos Veículos</p>
+            <p>Admin / Geek t-shirts shop</p>
           </div>
 
           <div className="form-label-group">
