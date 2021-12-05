@@ -6,7 +6,7 @@
     <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/DioenDJS/Projeto-Geek-t-shirts-shop-Web" >
 </p>
 
-<img src="imagemProjeto.png" alt="imagem do projeto">
+<img src="./public/imagemProjeto.png" alt="imagem do projeto">
 
 
 ## Tecnologias Utilizadas no projeto :construction:
