@@ -1,0 +1,11 @@
+span {
+  cursor: pointer;
+}
+
+.bg-style{
+  background-color:#15414f;
+}
+
+nav h3, h5, li{
+  color:#e1d11d;
+}
