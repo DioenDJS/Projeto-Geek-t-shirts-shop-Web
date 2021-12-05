@@ -1,5 +1,6 @@
 import React, {useContext} from "react";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { ClienteContext } from "./ClienteContext";
 
 import "./Header.css";
@@ -7,6 +8,13 @@ import "./Header.css";
 const Header = () => {
 
   const cliente = useContext(ClienteContext);
+
+  let history = useHistory();
+
+  const loginLogout = () => {
+    cliente.setDados({id: null, nome: "", token: ""});
+    history.push("/login")
+  }
 
   return (
     <nav className="navbar navbar-expand-sm  navbar-dark bg-style">
@@ -28,10 +36,10 @@ const Header = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/login">
+          <span className="nav-link" onClick={loginLogout}>
             <i className="fas fa-user-friends mr-2"></i>
             { cliente.dados.nome ? cliente.dados.nome + " (sair)" : "(identifique-se)"}
-          </Link>
+          </span>
         </li>
       </ul>
     </nav>
