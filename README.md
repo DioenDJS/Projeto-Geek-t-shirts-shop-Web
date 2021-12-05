@@ -33,11 +33,13 @@ Front-End: Desenvolver uma página utilizando os Hooks:
 - useEffect
 - useContext
 
-Que apresente a listagem de itens obtida do Web Services e permita ao cliente avaliar/comentar/interagir sobre
-cada item.
-Conter rotina de login.
-Realizar filtro sobre os dados.
-Exibir dados estatísticos do cadastro.
+Que apresente a listagem de itens obtida do Web Services e permita ao cliente avaliar/comentar/interagir  - sobre
+- cada item.
+- Conter rotina de login.
+- Realizar filtro sobre os dados.
+- Exibir dados estatísticos do cadastro.
+
+[Repositorio de web service](https://github.com/DioenDJS/Projeto-Geek-t-shirts-shop) :package:
 
 > - create-react-app
 >
