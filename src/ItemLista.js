@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { ClienteContext } from "./ClienteContext";
 
 import "./ItemLista.css";
+
 const ItemLista = (props) => {
 
   const cliente = useContext(ClienteContext);
@@ -25,8 +26,8 @@ const ItemLista = (props) => {
   }
 
   return (
-    <div className="card col-sm-3 col-6 mt-2">
-      <img className="card-img-top" src={props.foto} alt="Veículo em Destaque" />
+    <div className="card col-sm-3 col-6 my-3 p-0 d-flex container">
+      <img className="card-img-top " src={props.foto} alt="Veículo em Destaque" />
       <div className="card-body">
         <h4 className="card-title">
           {props.marca} {props.modelo} ({props.ano})
@@ -37,7 +38,7 @@ const ItemLista = (props) => {
             minimumFractionDigits: 2,
           })}
         </p>
-        {likeButtons}
+        {likeButtons }
       </div>
     </div>
   );
