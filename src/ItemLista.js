@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { ClienteContext } from "./ClienteContext";
 
 import "./ItemLista.css";
-
 const ItemLista = (props) => {
 
   const cliente = useContext(ClienteContext);
@@ -38,7 +37,7 @@ const ItemLista = (props) => {
             minimumFractionDigits: 2,
           })}
         </p>
-        {likeButtons }
+        {likeButtons}
       </div>
     </div>
   );
