@@ -25,7 +25,7 @@ const Listagem = () => {
 
   const clienteLike = async (id, index) => {
     if (await jaAvaliou(id)) {
-      alert("Ops... você já avaliou esse Veículo");
+      alert("Ops... você já avaliou essa camiseta");
       return;
     }
 
@@ -54,7 +54,29 @@ const Listagem = () => {
     alert("Ok! Obrigado pela sua participação");
   };
 
-  const clienteDislike = async (id) => {};
+  const clienteDislike = async (id) => {
+    if (await jaAvaliou(id)) {
+      alert("Ops... você já avaliou essa camiseta");
+      return;
+    }
+
+    let voto = {
+      "usuario_id": cliente.dados.id,
+      "camiseta_id": id,
+      "gostou": 0,
+    };
+
+    await Conecta.post("likes", voto);
+
+
+    // let dislikes = Number(reg.data.dislikes) + 1;
+
+    await Conecta.put("camisetas/dislike/" + id);
+
+    await getCamisetas();
+
+    alert("Ok! Obrigado pela sua participação");
+  };
 
   return (
     <div className="container">
